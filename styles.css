@@ -5,12 +5,12 @@
 }
 
 :root {
-    --primary-color: rgb(16, 101, 212);
+    --primary-color: rgb(51, 51, 51); 
     --text-color: rgb(51, 51, 51); 
     --text-color-light: rgb(117, 117, 117);  
     --heading-color: rgb(0, 0, 0);      
     --background-color: #fff;  
-    --max-width:850px
+    --max-width:1250px
 }
 
 html {
@@ -20,14 +20,15 @@ html {
 /* Global Setup */
 body {
     margin: 0rem 0rem;
-    font-family: "Geist", system-ui, -apple-system, sans-serif;
+    font-family: 'Switzer', system-ui, -apple-system, sans-serif;
     line-height: 1.6; 
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700; 
-    color: var(--prim);  
+    letter-spacing: -0.03em;
+    font-weight: 500; 
+    color: var(--heading-color);  
 }
 
 p {
@@ -82,8 +83,8 @@ a:hover {
 
 /* Header/nav */
 .nav {
-    background: white;
-    border-bottom: 1px solid #eee;
+    background: black;
+    border-bottom: 1px solid black;
     position: sticky;
     padding-top: 0.1px;
     top: 0;
@@ -98,7 +99,9 @@ a:hover {
 
 .nav-list {
     list-style: none;
-    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
     display: flex;
     gap: 1.2rem;
     align-items: center;
@@ -112,17 +115,17 @@ a:hover {
 /* Hero */
 .hero-section {
     text-align: left;
-    margin-top: 5rem;
-    margin-bottom:4rem;
+    margin-top: 0rem;
+    margin-bottom:3rem;
 }
 
 .hero-section h1 {
   line-height: 0;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(1rem, 10vw, 5.5rem);
 }
 
 .hero-section .subheading {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .content-separator{
@@ -189,9 +192,32 @@ a:hover {
 }
 
 
+.btn-download {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 
+.btn-download:hover {
+  background-color: white;
+  color: black;
+}
 
-
+.hero-avatar {
+    width: 100px;              /* adjust size as needed */
+    height: 100x;
+    object-fit: cover;
+    border-radius: 14px;      /* slightly rounded corners */
+    margin-bottom: 5rem;
+    display: block;           /* ensures left alignment */
+}
 
 
 /* Footer */

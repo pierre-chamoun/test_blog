@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prive-Style Personal Website</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
 
 
 
@@ -17,8 +16,9 @@
     <header class="nav">
         <nav class="nav-container">
             <ul class="nav-list">
+              <!---
                 <li class="logo">PC</li>
-                <li class="light-separator">|</li>
+                <li class="light-separator">|</li>--->
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -42,7 +42,9 @@
     </header>
 
     <main class="main-container">
+      
         <section id="hero" class="hero-section">
+            <img src="ppic.jpg" alt="Profile picture" class="hero-avatar">
             <h1>Pierre Chamoun</h1>
             <p class="subheading">M.Sc. Student in Robotics @ McGill University <span style="float:right;">Montreal</span></p>
         </section>
@@ -50,74 +52,77 @@
         <div class="content-separator">
             <p class="intro">Hi there! I’m an adventurer based in New York, with a background in the entertainment industry. These days, I’m driven by a love for creativity and innovation, constantly exploring new ways to connect ideas and build something meaningful.</p>
             <p class="intro">When I’m not immersed in my projects, you’ll find me outdoors - scaling rock faces, hiking scenic trails, and embracing the energy of nature. Life is all about climbing to new heights, both literally and figuratively!</p>
+            <a href="cv.pdf" class="btn-download" download>Download CV</a>
+          </div>
+
+      
+    
+
+    <div class="content-separator">
+      <section id="work" class="cards-section">
+        <div class="section-header">
+          <h2>News</h2>
+          <a href="#work" class="view-all">View all</a>
         </div>
 
+        <div class="recent-posts">
+          <div class="recent-post">
+            <div class="post-date">Sep 2025</div>
+            <div class="post-content">
+              TrailType — Modern design inspired by the great outdoors.
+            </div>
+          </div>
 
-<div class="content-separator">
-  <section id="work" class="cards-section">
-    <div class="section-header">
-      <h2>News</h2>
-      <a href="#work" class="view-all">View all</a>
+          <div class="recent-post">
+            <div class="post-date">Jan 2024</div>
+            <div class="post-content">
+              The Spark Sessions — A podcast for creators chasing meaningful work.
+            </div>
+          </div>
+
+          <div class="recent-post">
+            <div class="post-date">Jun 2023</div>
+            <div class="post-content">
+              Into the Wild — A raw journey through nature’s extremes.
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="recent-posts">
-      <div class="recent-post">
-        <div class="post-date">Sep 2025</div>
-        <div class="post-content">
-          TrailType — Modern design inspired by the great outdoors.
-        </div>
-      </div>
 
-      <div class="recent-post">
-        <div class="post-date">Jan 2024</div>
-        <div class="post-content">
-          The Spark Sessions — A podcast for creators chasing meaningful work.
+    <div class="content-separator">
+      <section id="work" class="cards-section">
+        <div class="section-header">
+          <h2>Latest Posts</h2>
+          <a href="#work" class="view-all">View all</a>
         </div>
-      </div>
 
-      <div class="recent-post">
-        <div class="post-date">Jun 2023</div>
-        <div class="post-content">
-          Into the Wild — A raw journey through nature’s extremes.
+        <div class="recent-posts">
+          <div class="recent-post">
+            <div class="post-date">Sep 2025</div>
+            <div class="post-content">
+              TrailType — Modern design inspired by the great outdoors.
+            </div>
+          </div>
+
+          <div class="recent-post">
+            <div class="post-date">Jan 2024</div>
+            <div class="post-content">
+              The Spark Sessions — A podcast for creators chasing meaningful work.
+            </div>
+          </div>
+
+          <div class="recent-post">
+            <div class="post-date">Jun 2023</div>
+            <div class="post-content">
+              Into the Wild — A raw journey through nature’s extremes.
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-</div>
-
-
-<div class="content-separator">
-  <section id="work" class="cards-section">
-    <div class="section-header">
-      <h2>Latest Posts</h2>
-      <a href="#work" class="view-all">View all</a>
-    </div>
-
-    <div class="recent-posts">
-      <div class="recent-post">
-        <div class="post-date">Sep 2025</div>
-        <div class="post-content">
-          TrailType — Modern design inspired by the great outdoors.
-        </div>
-      </div>
-
-      <div class="recent-post">
-        <div class="post-date">Jan 2024</div>
-        <div class="post-content">
-          The Spark Sessions — A podcast for creators chasing meaningful work.
-        </div>
-      </div>
-
-      <div class="recent-post">
-        <div class="post-date">Jun 2023</div>
-        <div class="post-content">
-          Into the Wild — A raw journey through nature’s extremes.
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
+</main>
 
     <footer class="footer">
         <p>© Pierre Chamoun | 2025</p>
